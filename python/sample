@@ -1,0 +1,4 @@
+从datetime64中获取 年月日
+print(np.datetime64(times[0],'Y'))
+print(np.datetime64(times[0],'M'))
+print(np.datetime64(times[0],'D'))
