@@ -1,4 +1,2 @@
-从datetime64中获取 年月日
-print(np.datetime64(times[0],'Y'))
-print(np.datetime64(times[0],'M'))
-print(np.datetime64(times[0],'D'))
+线性分析参考
+https://www.cnblogs.com/hhh5460/p/5786115.html
