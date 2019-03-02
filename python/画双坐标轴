@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+
+f,ax1 = plt.subplots(figsize=(20,10))
+ax1.plot(x,y,color="r",label="y")
+
+
+ax1.set_xlabel("x")
+ax1.set_ylabel("y")
+ax1.legend(loc="upper left")
+ax1.set_ylim((y.min(),y.max()))
+
+ax2=ax1.twinx()
+ax2.plot(x,z,color="b", label="z")
+ax2.set_ylabel("z")
+ax2.legend(loc="upper right")
+#ax2.set_ylim((0,200))
+#plt.savefig("pic/result.png")
+
+plt.show()
