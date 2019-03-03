@@ -1,0 +1,10 @@
+#求每10年显示一次值，作为横坐标
+xticks = []
+label_xticks=[]
+df_index_si = pd.Series(df.index)
+
+for i in range(df_index_si[0].year, df_index_si[len(df_index_si)-1].year+1, 10):
+	xticks.append(df_index_si[df_index_si==pd.datetime(i,1,1)].index[0])
+	label_xticks.append(i)
+  
+ plt.xticks(xticks, label_xticks, rotation=0)
