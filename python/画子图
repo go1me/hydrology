@@ -1,0 +1,25 @@
+ig = plt.figure(figsize=(10,9), facecolor = 'white')
+
+
+ax1 = fig.add_subplot(3,1,1)
+ax1.bar(location, x1, width=width, facecolor = 'red', edgecolor = 'white')
+ax1.set_ylabel("x1")
+ax1.set_xlabel("time")
+ax1.set_xticks(xticks, minor=False)
+ax1.set_xticklabels(label_xticks, minor=False)
+
+
+ax2 = fig.add_subplot(3,1,2)
+ax2.bar(location, x2, width=width, facecolor = 'red', edgecolor = 'white')
+ax2.set_ylabel("x2")
+ax2.set_xlabel("time")
+ax2.set_xticks(xticks, minor=False)
+ax2.set_xticklabels(label_xticks, minor=False)
+
+ax3 = fig.add_subplot(3,1,3)
+ax3.bar(location, x3, width=width, facecolor = 'red', edgecolor = 'white')
+ax3.set_ylabel("x3")
+ax3.set_xlabel("time")
+ax3.set_xticks(xticks, minor=False)
+ax3.set_xticklabels(label_xticks, minor=False)
+plt.savefig("pic/result.png")
