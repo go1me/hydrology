@@ -1,0 +1,11 @@
+方法1，用ubuntu的源安装，一条命令搞定，妥妥的
+    sudo apt-get install ncl-ncarg
+对，就这一条命令，问题就是装的是ncl 6.3.0版本，不是最新的，可以用，没问题
+方法2，下载编译好的bin
+我下载的是
+ncl_ncarg-6.4.0-Debian8.6_64bit_nodap_gnu492.tar.gz
+ncl_ncarg-6.4.0-RHEL6.4_64bit_nodap_gnu447.tar.gz
+这两个都用过，都是妥妥的,不用降级GCC,下载解压然后
+在 ~/.bashrc  这个文件后面加下面两行就可以了
+export NCARG_ROOT="/你的解压目录/ncl_640/"
+export PATH="/你的解压目录/ncl_640/bin:$PATH"
